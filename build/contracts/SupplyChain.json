@@ -1,0 +1,104 @@
+{
+  "contractName": "SupplyChain",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/LEEJ/Documents/GitHub/supply-chain-leejieun94/contracts/SupplyChain.sol\":\"SupplyChain\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/LEEJ/Documents/GitHub/supply-chain-leejieun94/contracts/SupplyChain.sol\":{\"keccak256\":\"0x290bca7c2176cee352fc13f49d395a48464e3e6d58e3132a01fe786143f07247\",\"urls\":[\"bzzr://771c5bb22e1caa74cf555f267d26d24b96bc1ca49bc1582f8dbdfab32df1c91e\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058201d87486f1762a8495842c713975a91cf5a6b398e6a38e53216a26074b7bf02c70029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058201d87486f1762a8495842c713975a91cf5a6b398e6a38e53216a26074b7bf02c70029",
+  "sourceMap": "345:2085:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;345:2085:1;;;;;;;",
+  "deployedSourceMap": "345:2085:1:-;;;;;",
+  "source": "// Implement the smart contract SupplyChain following the provided instructions.\r\n// Look at the tests in SupplyChain.test.js and run 'truffle test' to be sure that your contract is working properly.\r\n// Only this file (SupplyChain.sol) should be modified, otherwise your assignment submission may be disqualified.\r\n\r\npragma solidity ^0.5.0;\r\n\r\ncontract SupplyChain {\r\n\r\n  // Create a variable named 'itemIdCount' to store the number of items and also be used as reference for the next itemId.\r\n\r\n  // Create an enumerated type variable named 'State' to list the possible states of an item (in this order): 'ForSale', 'Sold', 'Shipped' and 'Received'.\r\n\r\n  // Create a struct named 'Item' containing the following members (in this order): 'name', 'price', 'state', 'seller' and 'buyer'. \r\n\r\n  // Create a variable named 'items' to map itemIds to Items.\r\n\r\n  // Create an event to log all state changes for each item.\r\n\r\n\r\n\r\n  // Create a modifier named 'onlyOwner' where only the contract owner can proceed with the execution.\r\n\r\n  // Create a modifier named 'checkState' where the execution can only proceed if the respective Item of a given itemId is in a specific state.\r\n\r\n  // Create a modifier named 'checkCaller' where only the buyer or the seller (depends on the function) of an Item can proceed with the execution.\r\n\r\n  // Create a modifier named 'checkValue' where the execution can only proceed if the caller sent enough Ether to pay for a specific Item or fee.\r\n\r\n\r\n\r\n  // Create a function named 'addItem' that allows anyone to add a new Item by paying a fee of 1 finney. Any overpayment amount should be returned to the caller. All struct members should be mandatory except the buyer.\r\n\r\n  // Create a function named 'buyItem' that allows anyone to buy a specific Item by paying its price. The price amount should be transferred to the seller and any overpayment amount should be returned to the buyer.\r\n  \r\n  // Create a function named 'shipItem' that allows the seller of a specific Item to record that it has been shipped.\r\n\r\n  // Create a function named 'receiveItem' that allows the buyer of a specific Item to record that it has been received.\r\n\r\n  // Create a function named 'getItem' that allows anyone to get all the information of a specific Item in the same order of the struct Item. \r\n\r\n  // Create a function named 'withdrawFunds' that allows the contract owner to withdraw all the available funds.\r\n\r\n}\r\n",
+  "sourcePath": "C:/Users/LEEJ/Documents/GitHub/supply-chain-leejieun94/contracts/SupplyChain.sol",
+  "ast": {
+    "absolutePath": "/C/Users/LEEJ/Documents/GitHub/supply-chain-leejieun94/contracts/SupplyChain.sol",
+    "exportedSymbols": {
+      "SupplyChain": [
+        59
+      ]
+    },
+    "id": 60,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "318:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 59,
+        "linearizedBaseContracts": [
+          59
+        ],
+        "name": "SupplyChain",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 60,
+        "src": "345:2085:1"
+      }
+    ],
+    "src": "318:2114:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/LEEJ/Documents/GitHub/supply-chain-leejieun94/contracts/SupplyChain.sol",
+    "exportedSymbols": {
+      "SupplyChain": [
+        59
+      ]
+    },
+    "id": 60,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "318:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 59,
+        "linearizedBaseContracts": [
+          59
+        ],
+        "name": "SupplyChain",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 60,
+        "src": "345:2085:1"
+      }
+    ],
+    "src": "318:2114:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.12",
+  "updatedAt": "2019-08-21T05:14:59.791Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
